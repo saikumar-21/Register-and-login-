@@ -1,0 +1,20 @@
+extend base.pug
+
+block scripts
+    script(src="../static/index.js")
+
+block style
+    style
+        include ../static/home.css
+        include ../static/style.css
+
+block content
+    nav#navbar
+        ul#navul
+            li #[a( href = '/') Home]
+            li #[a( href = '/register') Register]
+            li #[a( href = '/login') Login]
+            
+
+    block content
+        li.btn1 #[a( href = '/register' class='btnn') Register Here]     

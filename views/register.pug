@@ -1,0 +1,25 @@
+extend base.pug
+
+block scripts
+    script(src="../static/index.js")
+
+block style
+    style
+        include ../static/style.css
+        include ../static/register.css
+
+block content
+    nav#navbar
+        ul#navul
+            li #[a( href = '/') Home]
+            li #[a( href = '/register') Register]
+            li #[a( href = '/login') Login]
+        
+    div.container
+        h2 Register Here
+        form(action="/register", method="post" autocomplete='off')
+            input(type="text" name='name' placeholder='Enter your Name' class='input')
+            input(type="password" name="password" placeholder='Enter password' class='input')
+            input(type="email" name='email' placeholder='Enter your Email-id' class='input')
+            button.btn
+                | Register 

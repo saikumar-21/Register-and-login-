@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: url('../static/hom.jpg')center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+#navbar{
+    background-color: #382929;
+    padding: 14px 10px;
+    font-size: 1.1rem;
+   color: black;
+   opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#navul{
+    display: flex;
+    align-items: center;
+}
+
+#navul li{
+    list-style: none;
+
+}
+
+a{
+    color: honeydew;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.btn1{
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color:rgb(179 179 152);
+    cursor: pointer;
+    outline: none;
+    list-style: none ;
+    display: inline-block;
+
+}
+.btn1 a{
+    color :black
+}

@@ -1,0 +1,18 @@
+extend base.pug
+
+block scripts
+    script(src="../static/index.js")
+
+block style
+    style
+        include ../static/style.css
+        include ../static/logn.css
+
+block content
+    nav#navbar
+        ul#navul
+            li #[a( href = '/') Home]
+        
+    div.container
+        h2 Welcome to Dashboard 
+        
